@@ -1,7 +1,7 @@
 AddSubFont-to-MKV
 =
 ### Copyright(c) 2018-2019 yyfll(yanyifei66@gmail.com)
-### 本批处理是遵守GNU通用公共许可协议第二版及其后版本 (GPLv2 or later) 的自由软件
+### 本批处理是遵守GNU通用公共许可协议第二版(GPLv2)的自由软件
 ### 本批处理是用于将字幕和字体通过MKVmerge快速封装到MKV中的无用批处理
 ### 本批处理需要MKVmerge作为依赖
 
