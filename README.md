@@ -91,7 +91,7 @@ EasyUse 1.0
 
 ### 调用注意
 	开关必须用引号括起，比如
-	"?output %APPDATA%\test" "?pri 3" "?dbm n:y"
+	"?out %APPDATA%\test" "?pri 3" "?dbm n:y"
 	
 ### 调用方法①(CMD)
 	ASFMKV "输入路径" "[调用开关]"
