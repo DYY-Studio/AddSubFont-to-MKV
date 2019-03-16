@@ -85,8 +85,9 @@ MKVmerge默认的3%头读取难以分离MXF的音频流，加之MXF用量极少�
 	?dbm [y/n]:[y/n] 	是否使用测试模式和空输出(测试模式开关:空输出开关)
 				(注意：dbm开关若只输入一个y则同时开启测试模式和空输出，反之亦然)
 	?ffl [filter] 		文件过滤器
-	?pri [1-3/input] 	选择进程优先级
-	?uil [1-4/input]	选择Mkvmerge的语言
+	?pri [0-4] 		选择进程优先级
+	?uil [1-4/input]	选择mkvmerge的语言
+	?exe [path]		选择mkvmerge的路径
 > 调用注意
 	
 	开关必须用引号括起，比如
