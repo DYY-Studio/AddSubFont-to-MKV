@@ -150,7 +150,6 @@ MKVmerge默认的3%头读取难以分离MXF的音频流，加之MXF用量极少�
 	-count 		存放目录下的文件总数
 	-working 	存放已编码完成的文件总数
 	-opath 		存放输出路径
-	-rvpath 	存放输出文件名(有扩展名)
 	-sub[%num%] 	(数组)存放字幕文件路径
 	-font[%num%] 	(数组)存放字体文件路径
 	-filename 	存放输出文件名(无扩展名)
@@ -167,8 +166,6 @@ MKVmerge默认的3%头读取难以分离MXF的音频流，加之MXF用量极少�
 > Replace for Batch(LICENSE: GPLv2)
 	
 	Copyright© 2018-2019 yyfll(yanyifei66@gmail.com)
-	* [Delete AND(&) (CALL Ver.)]
-		该版本使用CALL接口，作为依赖组件使用，变量%return%为其返回值
 	* [Delete AND(&) (DIR Ver.)]
 		该版本是独立程序，用于替换文件夹下所有符合匹配并带有"&"号的文件名
 	* [Replace for Batch V3]
@@ -180,6 +177,7 @@ MKVmerge默认的3%头读取难以分离MXF的音频流，加之MXF用量极少�
 
 	Copyright© 2018-2019 yyfll(yanyifei66@gmail.com)
 	Module_FormatDate	日期格式化模块
+	Module_ReplaceBackSlash	[专用]JSON转义模块(EN-JSON)
 	Module_EncapsulationMKV	[专用]封装控制模块
 	Module_GetOutputPath	[专用]输出控制模块
 	Module_DEBUG		除错辅助模块
