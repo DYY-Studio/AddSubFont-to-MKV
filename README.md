@@ -177,7 +177,7 @@ MKVmerge默认的3%头读取难以分离MXF的音频流，加之MXF用量极少�
 
 	Copyright© 2018-2019 yyfll(yanyifei66@gmail.com)
 	Module_FormatDate	日期格式化模块
-	Module_ReplaceBackSlash	[专用]JSON转义模块(EN-JSON)
+	Module_ReplaceBackSlash	[专用]JSON转义模块(EU-JSON)
 	Module_EncapsulationMKV	[专用]封装控制模块
 	Module_GetOutputPath	[专用]输出控制模块
 	Module_DEBUG		除错辅助模块
