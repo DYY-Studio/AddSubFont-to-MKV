@@ -163,7 +163,7 @@ MKVmerge默认的3%头读取难以分离MXF的音频流，加之MXF用量极少�
 	Copyright© 2002–2018 Moritz Bunkus
 	https://mkvtoolnix.download/downloads.html
 
-> Replace for Batch(LICENSE: GPLv2)
+> Replace for Batch(LICENSE: MIT)
 	
 	Copyright© 2018-2019 yyfll(yanyifei66@gmail.com)
 	* [Delete AND(&) (DIR Ver.)]
