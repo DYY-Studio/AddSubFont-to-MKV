@@ -328,14 +328,13 @@ for /f "tokens=*" %%a in ("%exein%") do (
 
 call "%exein%" -V>nul 2>nul
 
-if not "%errorlevel%"=="0" (
+if not %errorlevel%==0 (
 	echo [ERROR] EXEIN所设置的路径无效
-	set "errorlevel=0"
 ) else goto no_check_again
 
 call "mkvmerge" -V>nul 2>nul
 
-if "%errorlevel%"=="0" (
+if %errorlevel%==0 (
 	set "exein=mkvmerge"
 	echo [CORRECT] EXEIN=mkvmerge
 ) else (
