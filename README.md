@@ -104,6 +104,7 @@ ASFMKV并没有抽取字体子集这种高级功能，这导致ASFMKV只是很�
 
 ##  5. <a name='-1'></a>常见问题
 **为什么ASFMKV显示输出成功但没有任何文件输出？**
+
 这是一个设计上的失误，由于当前学业繁忙，暂无修正的计划。
 
 请检查您的输入文件夹和ASFMKV的自定义变量设定，有以下可能性：
@@ -119,6 +120,7 @@ ASFMKV并没有抽取字体子集这种高级功能，这导致ASFMKV只是很�
 *（这样修改的设定并不会保存，下一次还需要再修改）*
 
 **为什么ASFMKV总是显示错误**
+
 `"mkvmerge" is not recognized as an internal or external command`
 
 在EU2.12f和ExtL1.02f（GitHub为ExtL1.02）前的几个版本，由于对mkvmerge检测系统的设计失误
@@ -128,6 +130,7 @@ ASFMKV并没有抽取字体子集这种高级功能，这导致ASFMKV只是很�
 我的mkvmerge是在%path%下的，因而一直没有发现检测系统的BUG，这点就请各位赶紧更新。
 
 **完成一次输出之后回到主界面时，CMD的标题没有重置**
+
 我的锅，忘了写了。
 
 ##  6. <a name='-1'></a>自定义变量
@@ -143,45 +146,46 @@ ASFMKV的主界面的"[CUSTOM SETTINGS]"详细显示了各自定义变量的情�
 在修改的时候只需要把行首为`set`的那一行，等号后面的值修改为目标值就行了，如`set "notsub=A"`，空缺就直接`set "notsub="`
 
 **EU2.10/ExtL1.00-MG 及更新版本**
+
 在主界面（即要求您输入文件路径、有一坨信息提示的时候）的"文件路径"处输入`set`就可以打开内置的变量管理器
 
 使用内置变量管理器只能更改本次使用时的设定，关闭窗口即重置
 
 ###  6.2. <a name='-1'></a>变量表
-**ExtList（仅ExtL版本）**
+***ExtList（仅ExtL版本）***
 控制ASFMKV的多媒体文件输入过滤器，决定哪些扩展名可以输入
 
-**NotDel**
+***NotDel***
 控制是否要删除输入文件
 
-**NotSub**
+***NotSub***
 控制在没有外挂字幕的时候（或者找不到外挂字幕的时候）是否要封装字体
 
-**NotFont**
+***NotFont***
 控制是否封装字体
 
-**OutPath**
+***OutPath***
 设置文件输出路径（ExtL1.02默认为"[源目录]\REMUX"，其他版本都是直接输出回源目录）
 
-**SearchFilter**
+***SearchFilter***
 使用通配符`*`、`?`来过滤输入文件
 
-**ui_language**
+***ui_language***
 控制mkvmerge封装时显示的语言，并不更改ASFMKV的主要语言（因为只有一种语言嘛）
 
-**priority**
+***priority***
 控制mkvmerge的进程优先级，优先级越高，被其他使用磁盘的应用阻断和干扰的程度就越小
 
-**SubDir**
+***SubDir***
 控制是否搜索子目录
 
-**DEBUG_MODE**
+***DEBUG_MODE***
 启用命令回显并阻止所有CLS清屏
 
-**NUL_OUTPUT**
+***NUL_OUTPUT***
 测试用，输出到NUL（即不输出文件）
 
-**EXEin**
+***EXEin***
 mkvmerge的路径，用于mkvmerge不和ASFMKV在同一目录或不在`%path%`下的情况
 
 
