@@ -121,17 +121,15 @@ ASFMKV并没有抽取字体子集这种高级功能，这导致ASFMKV只是很�
 
 **为什么ASFMKV总是显示错误**
 
-`"mkvmerge" is not recognized as an internal or external command`
+`"mkvmerge" is not recognized as an internal or external command...`
 
 在EU2.12f和ExtL1.02f（GitHub为ExtL1.02）前的几个版本，由于对mkvmerge检测系统的设计失误
 
-导致如果mkvmerge没有在Path（Windows环境变量）下的路径中的时候，会出现该错误
+导致找不到mkvmerge时会弹出错误而不是直接禁止继续使用
 
-我的mkvmerge是在%path%下的，因而一直没有发现检测系统的BUG，这点就请各位赶紧更新。
+至于似乎还有其他情况会引起弹出这种错误的，还在研究中
 
-**完成一次输出之后回到主界面时，CMD的标题没有重置**
-
-我的锅，忘了写了。
+建议是直接把mkvmerge的目录添加到环境变量`path`下，或者干脆和ASFMKV放在一起
 
 ##  6. <a name='-1'></a>自定义变量
 为了符合不同用户的使用习惯，ASFMKV有着大量的自定义变量来符合不同用户的使用习惯
