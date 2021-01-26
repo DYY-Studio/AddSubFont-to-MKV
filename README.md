@@ -65,7 +65,7 @@ ASFMKV并没有抽取字体子集这种高级功能，这导致ASFMKV只是很�
 * SUP/PGS (HDMV Presentation Graphic Stream Subtitles) 
 * IDX+SUB (MPEG-4 Timed Text)
 
-——————————
+***
 
 **以下格式表是内建的，不可更改**
 ### 可接受的字体格式
