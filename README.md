@@ -1,6 +1,6 @@
 AddSubFont-to-MKV（ASFMKV）
 -
-**Copyright(c) 2018-2019 yyfll(yanyifei66@gmail.com)**
+**Copyright(c) 2018-2021 yyfll(yanyifei66@gmail.com)**
 
 **本批处理是遵守GNU通用公共许可协议第二版(GPLv2)的自由软件**
 
