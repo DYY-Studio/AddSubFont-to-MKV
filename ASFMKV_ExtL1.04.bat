@@ -597,7 +597,6 @@ if "%count%"=="0" (
 	echo [ERROR] 路径为空目录！
 	goto need_folder
 )
-pause
 rem 获取目标目录中的所有文件，并逐次递交负责输出路径控制、MKV封装的模块
 if defined dirin (
 	for /f "usebackq tokens=*" %%a in ("%APPDATA%\filelist.log") do (
