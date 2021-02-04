@@ -8,6 +8,13 @@ AddSubFont-to-MKV（ASFMKV）
 
 **本批处理需要MKVmerge作为依赖**
 
+最新更新
+-
+### ExtL 1.04 （重要更新）
+此版本包括一个严重BUG修复和一个功能改进，建议立刻更新。
+1. 修复了由于**ExtL1.03更新**导致的没有字体时运行封装崩溃的严重问题
+1. searchfilter不再基于`findstr`，速度更快更准确（searchfilter的老坑终于被填上了...）
+
 目录
 -
 <!-- vscode-markdown-toc -->
