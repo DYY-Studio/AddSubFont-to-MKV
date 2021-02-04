@@ -974,7 +974,7 @@ if not exist "%rf%fonts_json.log" (
 )
 :notget_font
 set "file="
-
+if not defined fontnum set "fontnum=0"
 if defined notsub if not defined sub[0] (
 	if "%fontnum%"=="0" (
 		set /a working=working+1
