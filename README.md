@@ -8,12 +8,19 @@ AddSubFont-to-MKV（ASFMKV）
 
 **本批处理需要MKVmerge作为依赖**
 
-最新更新
+最近更新
 -
+### ExtL 1.05 （重要更新）
+此版本包括一个重要问题修复和多个功能改进，建议立刻更新。
+1. 修复了只输入一个文件而非文件夹时无法正常运行的问题
+1. 完成了对UNC路径（或称 通用命名规则 / 局域网路径）的支持
+1. 内置ReplaceBatch模块更新到V3F2_2
+1. 内置ReplaceBatch模块已支持 新CMD的命令扩展 提供的 Replace 方法，速度更快
 ### ExtL 1.04 （重要更新）
-此版本包括一个严重BUG修复和一个功能改进，建议立刻更新。
+此版本包括一个重要问题修复和一个功能改进
 1. 修复了由于**ExtL1.03更新**导致的没有字体时运行封装崩溃的严重问题
 1. searchfilter不再基于`findstr`，速度更快更准确（searchfilter的老坑终于被填上了...）
+1. 变量管理器已支持`searchfilter`和`debug_mode`变量的设定
 
 目录
 -
@@ -93,15 +100,16 @@ ASFMKV并没有抽取字体子集这种高级功能，这导致ASFMKV只是很�
 * M2TS (MPEG-2 Transport Stream) 
 * WEBM (Google WebM) (1811GAMMA+支持）
 
+***
+
+**以下格式表是内建的，不可更改**
+
 ###  4.2. <a name='-2.2'></a>可接受的字幕格式
 * ASS/SSA (SubStation Alpha)
 * SRT (SubRip Text) 
 * SUP/PGS (HDMV Presentation Graphic Stream Subtitles) 
 * IDX+SUB (MPEG-4 Timed Text)
 
-***
-
-**以下格式表是内建的，不可更改**
 ###  4.3. <a name='-2.3'></a>可接受的字体格式
 * TTC/TTF (TrueType Font) 
 * OTF (OpenType Font)
@@ -112,7 +120,7 @@ ASFMKV并没有抽取字体子集这种高级功能，这导致ASFMKV只是很�
 ##  5. <a name='-3'></a>常见问题
 **为什么ASFMKV显示输出成功但没有任何文件输出？**
 
-这是一个设计上的失误，由于当前学业繁忙，暂无修正的计划。
+在ExtL1.03及之后的版本中，一切文件没有得到处理的原因都会在运行结束后输出在屏幕上
 
 请检查您的输入文件夹和ASFMKV的自定义变量设定，有以下可能性：
 * 您的文件夹里只有字体文件而没有外挂字幕，同时您没有给NotSub变量赋值
@@ -134,9 +142,11 @@ ASFMKV并没有抽取字体子集这种高级功能，这导致ASFMKV只是很�
 
 导致找不到mkvmerge时会弹出错误而不是直接禁止继续使用
 
-至于似乎还有其他情况会引起弹出这种错误的，还在研究中
+在ExtL1.03更新前的版本中，如果mkvmerge不在`path`下但和ASFMKV放在同一目录，则第一次运行时会显示检测到了mkvmerge
 
-建议是直接把mkvmerge的目录添加到环境变量`path`下，或者干脆和ASFMKV放在一起
+但运行时无法输出任何文件，第二次运行时就会显示以上错误
+
+该问题已经在ExtL1.03中完全修复，请尽快更新
 
 ##  6. <a name='-4'></a>自定义变量
 为了符合不同用户的使用习惯，ASFMKV有着大量的自定义变量来符合不同用户的使用习惯
@@ -170,7 +180,7 @@ ASFMKV的主界面的"[CUSTOM SETTINGS]"详细显示了各自定义变量的情�
 控制是否封装字体
 
 ***OutPath***
-设置文件输出路径（ExtL1.02默认为"[源目录]\REMUX"，其他版本都是直接输出回源目录）
+设置文件输出路径（ExtL1.02及之后版本均默认为"[源目录]\REMUX"，其他版本都是直接输出回源目录）
 
 ***SearchFilter***
 使用通配符`*`、`?`来过滤输入文件
@@ -274,7 +284,7 @@ mkvmerge的路径，用于mkvmerge不和ASFMKV在同一目录或不在`%path%`�
 	Copyright© 2018-2019 yyfll(yanyifei66@gmail.com)
 	* [Delete AND(&) (DIR Ver.)]
 		该版本是独立程序，用于替换文件夹下所有符合匹配并带有"&"号的文件名
-	* [Replace for Batch V3]
+	* [Replace for Batch V3F2_2]
 		使用CALL接口的泛用性Replace模块，可供挂接使用
 
 ##  9. <a name='-7'></a>内部组件
