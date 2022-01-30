@@ -204,8 +204,8 @@ ASFMKV的主界面的"[CUSTOM SETTINGS]"详细显示了各自定义变量的情�
 | ui_language | 控制mkvmerge封装时显示的语言<br>并不更改ASFMKV的主要语言（因为只有一种语言嘛） | ? |
 | priority | 控制mkvmerge的进程优先级<br>优先级越高，被其他使用磁盘的应用阻断和干扰的程度就越小 | ? |
 | SubDir | 控制是否搜索子目录 | 2018.10 |
-| DEBUG_MODE | 启用命令回显并阻止所有CLS清屏 | 1902-3_V190212 |
-| NUL_OUTPUT | 测试用，输出到NUL（即不输出文件） | 1902-3_V190215 |
+| DEBUG_MODE | 启用命令回显并阻止所有CLS清屏 | 1902-3_212 |
+| NUL_OUTPUT | 测试用，输出到NUL（即不输出文件） | 1902-3_215 |
 | EXEin | mkvmerge的路径<br>用于mkvmerge不和ASFMKV在同一目录或不在`%path%`下的情况 | EU 1.03 |
 | titleVer | 是否在输出mkv文件的标题中添加ASFMKV的版本号 | ExtL 1.06 |
 
