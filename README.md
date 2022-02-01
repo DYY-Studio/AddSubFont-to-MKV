@@ -16,7 +16,7 @@ AddSubFont-to-MKV（ASFMKV）
 此版本包括两个功能更新及各种优化
 1. 添加了sublang变量，允许用户为字幕轨道设置语言编码，或每次使用时询问用户
 2. 添加了subnote变量，现在可以读取字幕文件名中的注释部分作为字幕轨道标题
-3. 添加了strictMatch变量，允许用户选择字幕匹配的严格程度
+3. 添加了matchStrict变量，允许用户选择字幕匹配的严格程度
 4. 添加了usingPS变量，允许用户选择Powershell来代替内置Replace和InStr
 5. 修复了在启用debug_mode时有两处仍会cls的问题
 6. debug_mode下变量管理器的变量显示部分不会启用命令回显
