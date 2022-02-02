@@ -17,7 +17,7 @@ AddSubFont-to-MKV（ASFMKV）
 1. 添加了sublang变量，允许用户为字幕轨道设置语言编码，或每次使用时询问用户
 2. 添加了subnote变量，现在可以读取字幕文件名中的注释部分作为字幕轨道标题
 3. 添加了matchStrict变量，允许用户选择字幕匹配的严格程度
-4. 添加了usingPS变量，允许用户选择Powershell来代替内置Replace和InStr
+4. 添加了usingPS变量，允许用户选择Powershell来代替内置Replace和InStr<br>（已经够快，不推荐）
 5. 修复了在启用debug_mode时有两处仍会cls的问题
 6. debug_mode下变量管理器的变量显示部分不会启用命令回显
 7. 优化了字体和字幕在未开启SubDir时的搜索
@@ -201,7 +201,10 @@ ASFMKV的主界面的"[CUSTOM SETTINGS]"详细显示了各自定义变量的情�
 | RmSubIn | 控制是否保留内挂字幕 | ExtL 1.06 |
 | RmAttach | 控制是否保留附件 | ExtL 1.06 |
 | OutPath | 设置文件输出路径<br>（ExtL1.02及之后版本均默认为"[源目录]\REMUX"，其他版本都是直接输出回源目录） | ? |
+| sublang | 为封入的外挂字幕设置语言编码 | ExtL 1.07 |
+| subnote | 为封入的外挂字幕自动匹配字幕标题 | ExtL 1.07 | 
 | SearchFilter | 使用通配符`*`、`?`来过滤输入文件 | 2018.5 |
+| matchStrict | 调整字幕匹配的严格程度 | ExtL 1.07 |
 | ui_language | 控制mkvmerge封装时显示的语言<br>并不更改ASFMKV的主要语言（因为只有一种语言嘛） | ? |
 | priority | 控制mkvmerge的进程优先级<br>优先级越高，被其他使用磁盘的应用阻断和干扰的程度就越小 | ? |
 | SubDir | 控制是否搜索子目录 | 2018.10 |
@@ -209,6 +212,7 @@ ASFMKV的主界面的"[CUSTOM SETTINGS]"详细显示了各自定义变量的情�
 | NUL_OUTPUT | 测试用，输出到NUL（即不输出文件） | 1902-3_215 |
 | EXEin | mkvmerge的路径<br>用于mkvmerge不和ASFMKV在同一目录或不在`%path%`下的情况 | EU 1.03 |
 | titleVer | 是否在输出mkv文件的标题中添加ASFMKV的版本号 | ExtL 1.06 |
+| usingPS | 是否启用Powershell来替换内置Replace和InStr | ExtL 1.07 |
 
 
 ##  7. <a name='-5'></a>外部调用
