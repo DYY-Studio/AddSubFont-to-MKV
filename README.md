@@ -10,6 +10,21 @@ AddSubFont-to-MKV（ASFMKV）
 
 最近更新
 -
+### Python Remake 1.00
+[ASFMKV Python Remake](https://github.com/DYY-Studio/AddSubFontMKV_py)
+
+此版本是 ASFMKV 的完全重制版本，使用 Python 编写
+
+此版本包括以下特性:
+1. 注册表字体读取 和 自定义字体文件夹读取
+2. 字体内部名称读取
+3. 字体查重
+4. ASS/SSA 字幕文件字体依赖检查
+5. 自定义变量
+6. 多色高亮显示
+7. 字体子集化
+8. mkvmerge批量封装
+
 ### ExtL 1.07 （功能更新）
 **新年好！**
 
